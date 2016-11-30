@@ -1,0 +1,1158 @@
+@charset "UTF-8";
+
+/*<!--头部导航栏开始-->*/
+.topp{
+    height: 50px;
+}
+.topnav {
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    width: 1350px;
+
+}
+
+.topnav .left-nav {
+    float: left;
+    margin-top: -16px;
+
+}
+
+.topnav .center {
+    float: left;
+    margin-left: 60px;
+}
+
+.topnav .center a {
+    display: inline-block;
+    padding: 0px 18px;
+    font-weight: 700;
+}
+.center a img{
+    vertical-align: inherit;
+}
+.topnav .right-nav {
+    float: right;
+    margin-top: -16px;
+    height: 17px;
+}
+.fixeds{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    /*left: 0;*/
+}
+
+/*<!--头部导航栏结束-->*/
+
+/*<!--中间主体图片部分开始-->*/
+.main-pic {
+
+    height: 580px;
+    position: relative;
+}
+
+.main-pic .home_bg {
+
+    width: 1350px;
+    height: 580px;
+}
+
+.main-pic .sensing {
+    position: absolute;
+    left: 20px;
+    top: 510px;
+    height: 10%;
+}
+
+.main-pic .solgan {
+    position: absolute;
+    top: 45px;
+    left: 500px;
+}
+
+/*<!--中间悬浮视窗-->*/
+.function-window {
+    width: 198px;
+    height: 455px;
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+    padding-top: 25px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+
+}
+
+.function-window .top {
+    height: 84px;
+    width: 182px;
+    border-bottom: 1px solid #85806F;
+    margin-bottom: 3px;
+    margin-left: -34px;
+    /*background-color: #202629;*/
+}
+
+.function-window .top .one {
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.function-window .top .two {
+    margin-top: 35px;
+}
+
+.function-window .top .two .sp {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.function-window .top .two strong {
+    font-size: 18px;
+}
+
+.function-window .buttom {
+    border-top: 1px solid #85806F;
+    margin-left: 16px;
+    margin-top: 62px;
+    /*background-color: #202629;*/
+}
+
+.function-window .buttom .btn {
+    margin-top: 18px;
+}
+
+.function-window .buttom .btn img {
+    height: 34px;
+    display: none;
+    position: relative;
+}
+
+
+.function-window .buttom .btn div {
+    height: 34px;
+}
+
+.function-window .buttom .btn div a {
+    color: white;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.function-window .video {
+    width: 198px;
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+    left: 0px;
+    top: 8px;
+}
+
+.function-window .video .play {
+    position: absolute;
+    top: -2px;
+    left: 60px;
+
+}
+
+.function-window .weibo {
+    padding-top: 18px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.function-window .weibo .wb {
+    margin-right: 40px;
+}
+
+.function-window .weibo .qq {
+    margin-right: 40px;
+}
+
+.function-window .text {
+    height: 63px;
+    width: 197px;
+    color: #ACABAA;
+    background-color: #302D2B;
+    margin-top: 35px;
+    cursor: pointer;
+    /*float: right;*/
+    /*overflow: hidden;*/
+
+}
+
+.function-window .text .content {
+    /*position: relative;*/
+    background-color: #302D2B;
+
+}
+
+.function-window .text .pic-one {
+    display: none;
+    margin-left: 50px;
+    z-index: 100;
+    /*overflow: visible;*/
+    /*z-index: 1000;*/
+}
+
+.function-window .text .pic-two {
+    display: none;
+    margin-left: 50px;
+    z-index: 100;
+    /*overflow: visible;*/
+    /*z-index: 1000;*/
+
+}
+
+.function-window .text .p1 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.function-window .text .p2 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/**/
+/*<!--右侧的固定栏-->*/
+.right-fix {
+    position: absolute;
+    width: 120px;
+    height: 165px;
+    top: 150px;
+    right: 30px;
+}
+.guding{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.right-fix .ul {
+    width: 120px;
+    height: 165px;
+}
+
+.right-fix li {
+    width: 120px;
+    height: 31px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.right-fix span {
+    float: left;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    display: none;
+    /*background-color: black;*/
+    opacity: 0.5;
+}
+
+.right-fix img {
+    float: right;
+    width: 30px;
+    border-bottom: 1px solid white;
+}
+
+/*右下角的logo*/
+.main-pic .right-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+/*<!--第二个背景开始-->*/
+.two-bg {
+    position: relative;
+}
+
+.two-bg .top-nav {
+    height: 52px;
+    background-color: #000000;
+    position: absolute;
+    top: -1px;
+}
+
+.two-bg .top-nav .nav-left {
+    float: left;
+    height: 52px;
+}
+
+.top-nav .nav-left .left-logo {
+    float: left;
+    margin-top: 7px;
+    margin-left: 182px;
+}
+
+.top-nav .nav-left .chose {
+    float: left;
+    margin-left: 35px;
+}
+
+.top-nav .nav-left .chose ul {
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.top-nav .nav-left .chose ul li {
+    float: left;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.two-bg .top-nav .nav-right {
+    float: right;
+    width: 350px;
+    height: 52px;
+    margin-left: 116px;
+    padding-left: 65px;
+    background-color: #363636;
+    position: relative;
+    border-radius: 300px 0px 0px 0px;
+    /*z-index: 1;*/
+}
+
+.two-bg .top-nav .nav-right span {
+    width: 17px;
+    height: 20px;
+    background: url("../images/testdrive_logo.jpg") no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 40px;
+}
+
+.two-bg .top-nav .nav-right p {
+    height: 52px;
+    line-height: 52px;
+    color: #D69672;
+}
+
+/*.fixed{*/
+/*position: fixed;*/
+/*top: 0;*/
+/*left: 0;*/
+/*}*/
+
+.two-bg {
+    position: relative;
+}
+
+.two-bg .color-car {
+    position: absolute;
+    top: 180px;
+    left: 398px;
+}
+
+.two-bg .color-car img {
+    display: none;
+    width: 540px;
+    height: 399px;
+}
+
+.two-bg .color-car .show-one {
+    display: block;
+}
+
+.two-bg .color-change {
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    bottom: 55px;
+    left: 430px;
+}
+
+.two-bg .color-change div {
+    float: left;
+}
+
+.two-bg .color-change .color-one {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.two-bg .color-change .color-one img {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.two-bg .color-change .color-one .t {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 70px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: none;
+
+}
+
+.two-bg .color-change .color-one .r {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 1px;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: none;
+
+}
+
+.two-bg .color-change .color-one .l {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    width: 1px;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: none;
+
+}
+
+.two-bg .color-change .color-one .b {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    width: 70px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+.two-bg .color-change .color-one p {
+    margin-top: 15px;
+}
+
+.two-bg .lode {
+    position: absolute;
+    bottom: 18px;
+    left: 520px;
+    cursor: pointer;
+}
+
+
+/*<!--第三个背景开始-->*/
+.all {
+    height: 633px;
+    width: 1350px;
+
+}
+.all ol {
+    position: absolute;
+    left: 622px;
+    bottom: 30px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cc{
+    color: white;
+    opacity: 0.5;
+}
+.allboth{
+    width: 1350px;
+    overflow: hidden;
+    height: 633px;
+    position: relative;
+}
+.screen{
+    width: 4050px;
+    height: 633px;
+    position: absolute;
+}
+.car-window {
+    float: left;
+    height: 633px;
+    width: 1350px;
+    position: relative;
+}
+
+.bgcar {
+    position: relative;
+    height: 633px;
+}
+
+.bgcar img {
+    position: absolute;
+}
+
+.car-window .one {
+    position: absolute;
+    z-index: 10;
+}
+ .clo{
+    display: block;
+}
+ .close {
+    display: none;
+}
+
+/*关闭天窗*/
+.openwindow {
+    position: absolute;
+    top: 140px;
+    left: 425px;
+    margin-bottom: 20px;
+    display: block;
+
+}
+
+.openwindow .pic {
+    margin-bottom: 20px;
+}
+
+.openwindow span {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #B88F63;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 200px;
+    display: block;
+
+}
+
+/*--------打开天窗*/
+.openwindow-close {
+    position: absolute;
+    top: 140px;
+    left: 425px;
+    margin-bottom: 20px;
+    display: none;
+    /*z-index: 1000;*/
+}
+
+.openwindow-close .pic {
+    margin-bottom: 20px;
+}
+
+.openwindow-close span {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #B88F63;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 200px;
+    display: none;
+}
+
+/*车展的那个图片*/
+.chezhan {
+    float: left;
+    position: relative;
+}
+
+.carlast {
+    float: right;
+    position: relative;
+}
+
+/*第四个背景图片*/
+.car-light{
+    width: 1350px;
+    height: 633px;
+}
+.car-bg {
+    position: relative;
+    width: 1350px;
+    height: 633px;
+}
+
+.one {
+    position: absolute;
+    z-index: 10;
+}
+
+.car-bg .tit-1 {
+    position: absolute;
+    bottom: 70px;
+}
+
+.all {
+    position: relative;
+    height: 633px;
+    width: 1350px;
+}
+
+.list {
+    height: 633px;
+    width: 1350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.list div {
+    width: 1350px;
+    height: 633px;
+    float: left;
+}
+
+.list .length {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 6750px;
+}
+
+.list .centent {
+    position: absolute;
+    top: 205px;
+    left: 400px;
+}
+
+.neirong {
+
+    height: 40px;
+    margin-top: 20px;
+}
+
+.neirong span {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #18130E;
+    cursor: pointer;
+}
+ .cl {
+    background-color: #9C6B51;
+}
+
+.car-bg2 {
+    position: relative;
+}
+
+.car-bg2 .tit-2 {
+    position: absolute;
+    bottom: 70px;
+}
+
+.car-bg3 {
+    position: relative;
+}
+
+.car-bg3 .tit-3 {
+    position: absolute;
+    bottom: 70px;
+}
+
+.car-bg4 {
+    position: relative;
+}
+
+.car-bg4 .tit-4 {
+    position: absolute;
+    bottom: 70px;
+}
+
+.car-bg5 {
+    position: relative;
+}
+
+.car-bg5 .tit-5 {
+    position: absolute;
+    bottom: 70px;
+}
+
+/*第四个背景图片结束*/
+
+
+/*第五个页面*/
+.car-bg5 {
+    width: 1350px;
+    height: 633px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.car-bg5 .cti-line-bg {
+    position: absolute;
+}
+
+.car-bg5 .cti-configure-tit {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    color: #FFFFFF;
+}
+
+.car-bg5 .cti-configure-tit h1 {
+    font-size: 24px;
+}
+
+.cti-arr-configure-box {
+    height: 52px;
+    width: 1100px;
+    margin-left: 120px;
+    position: absolute;
+    top: 300px;
+    opacity: 0.5;
+}
+
+.arr-left {
+    float: left;
+}
+
+.arr-right {
+    float: right;
+
+}
+/*.allap{*/
+    /*width: 2700px;*/
+/*}*/
+.swiper-slide {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    float: left;
+    display: block;
+}
+.swiner-slider{
+    width: 1000px;
+    height: 500px;
+    float: right;
+    overflow: hidden;
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    display: none;
+}
+
+.cti-configure-cont {
+    width: 280px;
+    background-color: #1C1914;
+    float: left;
+    margin-right: 50px;
+}
+
+.img-t-tit {
+    margin: 15px auto;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.cti-tit-img {
+    margin-bottom: 30px;
+}
+
+.a-config p {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cti-configure-cont ul {
+    margin-top: 15px;
+}
+
+.cti-configure-cont ul li {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #676666;
+}
+
+.cti-contrast-model {
+    margin-top: 15px;
+}
+
+.cti-contrast-model p {
+    float: left;
+    background: #9f9f9f;
+    margin-left: 10px;
+    padding: 10px 60px;
+    font-size: 14px;
+    color: #29292b;
+    cursor: pointer;
+}
+
+.cti-contrast-model img {
+    float: right;
+    height: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+.count {
+    width: 280px;
+    height: 55px;
+    position: absolute;
+    bottom: 10px;
+    left: 530px;
+
+}
+
+.p-t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fabb8e;
+    opacity: 0;
+}
+
+.p-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #fabb8e;
+    opacity: 0;
+}
+
+.p-b {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #fabb8e;
+    opacity: 0;
+}
+
+.p-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #fabb8e;
+    opacity: 0;
+}
+
+.cti {
+    display: block;
+    overflow: hidden;
+    width: 230px;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 50px;
+    background: url("../images/calculator.png") no-repeat 5% 50%;
+    background-color: #2e2e2e;
+    font-size: 18px;
+    color: #edc7ad;
+}
+
+.cti span {
+    height: 55px;
+    line-height: 55px;
+    width: 60px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    background: #1b1b1b;
+}
+
+.cti span img {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/*第六个页面*/
+.nextnew {
+    width: 1350px;
+    height: 633px;
+    position: relative;
+}
+
+.nextnew .news-title {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    color: #FFFFFF;
+}
+
+.nextnew .news-title h1 {
+    font-size: 24px;
+}
+
+.nextnew .slide {
+    width: 1200px;
+    height: 460px;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+
+.nextnew .slide img, p {
+    display: block;
+}
+
+.new-count {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 370px;
+    height: 210px;
+    background: #664c29;
+    margin: 10px 15px;
+}
+.cont{
+    position: absolute;
+    background: #664c29;
+    float: left;
+    width: 370px;
+    height: 210px;
+}
+.new-count .bgpic {
+    position: absolute;
+    /*z-index: 50;*/
+}
+
+.new-count .p1 {
+    position: absolute;
+    bottom: 1px;
+    width: 370px;
+    height: 32px;
+    font-size: 14px;
+    color: #a09f9f;
+    text-align: center;
+    background-color: black;
+    /*z-index: 100;*/
+    opacity: 0.5;
+}
+
+.topone {
+    position: absolute;
+    display: none;
+    background-color: #DC9770;
+    opacity: 0.5;
+    width: 370px;
+    height: 210px;
+}
+
+.vide {
+    display: block;
+    position: absolute;
+    top: 82px;
+    left: 120px;
+    width: 105px;
+    height: 40px;
+    border: 1px solid #FFF;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    /*z-index: 200;*/
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.bottom {
+    position: absolute;
+    top: 206px;
+    left: 50px;
+}
+
+/*第七个页面*/
+.page-tag {
+    position: relative;
+    width: 1350px;
+    height: 633px;
+}
+
+.map-tit {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    color: #FFFFFF;
+}
+
+.map-tit h1 {
+    font-size: 24px;
+}
+.map-pad{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    height: 450px;
+    width: 765px;
+}
+.map-pad .img{
+    float: left;
+}
+.map-pad span{
+    margin-right: -6px;
+    display: inline-block;
+}
+.logo1{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.logo2{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.logo3{
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.logo4{
+    position: absolute;
+    top: 200px;
+    left: 77px;
+}
+.logo4{
+    position: absolute;
+    top: 300px;
+    left: 477px;
+}
+.logo5{
+    position: absolute;
+    top: 400px;
+    left: 377px;
+}
+.logo5{
+    position: absolute;
+    top: 404px;
+    left: 577px;
+}
+.logo6{
+    position: absolute;
+    top: 244px;
+    left:222px;
+}
+.logo7{
+    position: absolute;
+    top: 431px;
+    left: 233px;
+}
+
+
+/*用于触发*/
+.addree1{
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color:  white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.addree1 p{
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+.addree2{
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color:  white;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+.addree2 p{
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+.addree3{
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color:  white;
+    position: absolute;
+    top: 320px;
+    left: 0px;
+}
+.addree3 p{
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+/*底部部分*/
+.footer{
+    height: 50px;
+    background-color: black;
+}
+.foot {
+    color: #626060;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.foot a{
+    display: inline-block;
+    margin: 0 10px ;
+    height:25px;
+    line-height: 25px;
+}
+.foot img{
+    position: absolute;
+    top: 6px;
+    right: 5%;
+    height: 39px;
+    cursor: pointer;
+}
+/*<!--中间主体图片部分结束-->*/

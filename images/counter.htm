@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>艾力绅</title>
+        <meta name="keywords" content="艾力绅">
+        <meta name="description" content="艾力绅">
+        <meta name="content" content="艾力绅">
+    <link rel="stylesheet" href="counter_data/nanoscroller.css">
+    <link rel="stylesheet" type="text/css" href="counter_data/counter.css">
+</head>
+
+<body>
+    <!-- 信贷计算器 -->
+            <div class="cti-conter-container">
+                <div class="nano has-scrollbar">
+                    <div style="right: -16px;" tabindex="0" class="content">
+                        <table class="counter-1">
+                            <tbody>
+                                <tr>
+                                    <td>请选择车型</td>
+                                    <td class="d-tr-second" colspan="2">
+                                        <select name="" id="d_loan_cartype">
+                                            <option selected="selected">请选择车型</option>
+                                            <option value="249800">经典版</option>
+                                            <option value="263800">舒适版</option>
+                                            <option value="275800">风尚版</option>
+                                            <option value="292800">豪华版</option>
+                                            <option value="309800">至尊版</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>厂家指导价</td>
+                                    <td colspan="2">
+                                        <input id="d_lian_price" type="text">
+                                        <label>元&nbsp;&nbsp;*可手动输入</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>省份城市</td>
+                                    <td colspan="2">
+                                        <select name="" id="d_loan_prov">
+                                            <option selected="selected" value="">请选择省份</option>
+                                        <option value="10">北京</option><option value="11">天津</option><option value="12">内蒙古</option><option value="13">河北</option><option value="14">山西</option><option value="15">黑龙江</option><option value="16">吉林</option><option value="17">辽宁</option><option value="18">湖北</option><option value="19">湖南</option><option value="20">江西</option><option value="21">河南</option><option value="22">山东</option><option value="23">江苏</option><option value="24">安徽</option><option value="25">浙江</option><option value="26">上海</option><option value="27">福建</option><option value="28">广东</option><option value="29">广西</option><option value="30">海南</option><option value="31">四川</option><option value="32">重庆</option><option value="33">云南</option><option value="34">贵州</option><option value="35">西藏</option><option value="36">陕西</option><option value="37">甘肃</option><option value="38">宁夏</option><option value="39">新疆</option><option value="40">青海</option></select>
+                                        <select name="" id="d_loan_city">
+                                            <option selected="selected" value="">请选择城市</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>贷款方案</td>
+                                    <td colspan="2">
+                                        <select name="" id="d_loan_plan">
+                                            <option selected="selected" value="0">请选择贷款方案</option>
+                                            <option value="1">等额本息</option>
+                                            <option value="2">气球贷(3-2-4)</option>
+                                            <option value="3">5050</option>
+                                            <option value="4">组合贷(购置税)</option>
+                                        </select>
+                                        &nbsp;&nbsp;<a target="_blank" href="http://www.wdhac.com.cn/index.php/category/businessInfo">贷款方案介绍&gt;&gt;</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>首付比例</td>
+                                    <td id="d_loan_downpay_rate_check">
+                                        <span data-value="0">
+                                            <label class="cti-checkbox d-checked"></label>0%</span>
+                                        <span data-value="0.2">
+                                            <label class="cti-checkbox"></label>20%</span>
+                                        <span data-value="0.3">
+                                            <label class="cti-checkbox"></label>30%</span>
+                                        <span data-value="0.4">
+                                            <label class="cti-checkbox"></label>40%</span>
+                                        <span data-value="0.5">
+                                            <label class="cti-checkbox"></label>50%</span>
+                                        <span data-value="0.6">
+                                            <label class="cti-checkbox"></label>60%</span>
+                                    </td>
+                                    <td>
+                                        <span class="cti-config-counter-custom">
+                                            <label class="cti-checkbox"></label>自定义
+                                            <input id="d_loan_downpay_rate" value="0" disabled="disabled" type="text">&nbsp;%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>还款期数</td>
+                                    <td id="d_loan_stage">
+                                        <span data-chargesrate="0.04" data-value="12">
+                                            <label class="cti-checkbox d-checked"></label>12期</span>
+                                        <span data-chargesrate="0.06" data-value="18">
+                                            <label class="cti-checkbox"></label>18期</span>
+                                        <span data-chargesrate="0.08" data-value="24">
+                                            <label class="cti-checkbox"></label>24期</span>
+                                        <span data-chargesrate="0.12" data-value="36">
+                                            <label class="cti-checkbox"></label>36期</span>
+                                    </td>
+                                </tr>
+                                <tr class="d-border-none">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>首付金额</td>
+                                    <td colspan="2">
+                                        <input id="d_loan_downpay" value="0" readonly="readonly" type="text">
+                                        <label class="d-addition-input" id="d_loan_taxinput">购置税：
+                                            <input value="0" readonly="readonly" type="text">
+                                            <!-- <em>&nbsp;&nbsp;根据国家政策，1.6L以下排量的乘用车购置税减半</em> -->
+                                        </label>
+                                        <label class="d-addition-input" id="d_loan_tailpay">尾款比例：
+                                            <input value="50" readonly="readonly" type="text">%</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>贷款金额</td>
+                                    <td colspan="2">
+                                        <input id="d_loan_loan" value="0" readonly="readonly" type="text">
+                                        <label id="d_loan_loan_tip">*贷款金额=车价x(1-首付比例)+购置税</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>月供金额</td>
+                                    <td colspan="2">
+                                        <input id="d_loan_monthpay" value="0" readonly="readonly" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>手续费</td>
+                                    <td colspan="2">
+                                        <input id="d_loan_charges" value="0" readonly="readonly" type="text">
+                                        <label>*一次性收取 或 分摊到每月</label>
+                                    </td>
+                                </tr>
+                                <tr class="d-border-none">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="d-border-none">
+                                    <td colspan="3">
+                                        <label>*本计算以部分银行信用卡分期手续费率为例，结果仅供参考，实际请详询当地特约店。</label>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <table class="counter-2" border="0" cellpadding="10" cellspacing="0" width="100%">
+                            <tbody><tr class="cti-counter-top">
+                                <td align="left">必要花费</td>
+                                <td colspan="3" class="counter2-color" align="right">小计<span id="total"></span>元</td>
+                            </tr>
+                            <tr class="cti-one counter2-color">
+                                <td style="width: 15%;">款项</td>
+                                <td style="width: 30%;">选项</td>
+                                <td style="width: 15%;" align="center">金额</td>
+                                <td style="width: 40%;" align="center">明细</td>
+                            </tr>
+                            <tr class="cti-two">
+                                <td>购置税</td>
+                                <td>&nbsp;</td>
+                                <td align="center"><input id="d_loan_a" disabled="disabled" type="text"></td>
+                                <td>购置税＝购车款/(1+17%)×购置税率(10%)，根据国家政策，1.6L以下车型购置税减半</td>
+                            </tr>
+                            <tr class="cti-one">
+                                <td>上牌费用</td>
+                                <td>&nbsp;</td>
+                                <td align="center"><input id="d_loan_b" value="500" type="text"></td>
+                                <td>通常商家提供的一条龙服务收费约500元，个人办理约 373元，其中工商验证、出库150元、移动证30元、环保 卡3元、拓号费40元、行驶证相片20元、托盘费130元</td>
+                            </tr>
+                            <tr class="cti-two">
+                                <td>车船使用税</td>
+                                <td id="d_loan_y">
+                                    <span class="cti-data-span" data-value="300"><label class="cti-checkbox"></label>1.0L（含）以下</span>
+                                    <span class="cti-data-span" data-value="420"><label class="cti-checkbox"></label>1.0-1.6L（含）</span>
+                                    <br>
+                                    <span class="cti-data-span" data-value="480"><label class="cti-checkbox"></label>1.6-2.0L(含）</span>
+                                    <span class="cti-data-span" data-value="900"><label class="cti-checkbox d-checked"></label>2.0-2.5L（含）</span>
+                                    <br>
+                                    <span class="cti-data-span" data-value="1920"><label class="cti-checkbox"></label>2.5-3.0L（含）</span>
+                                    <span class="cti-data-span" data-value="3480"><label class="cti-checkbox"></label>3.0-4.0L（含）</span>
+                                    <br>
+                                    <span class="cti-data-span" data-value="5280"><label class="cti-checkbox"></label>4.0以上</span>
+                                </td>
+                                <td align="center"><input id="d_loan_c" value="900" type="text"></td>
+                                <td>
+                                    各省不统一，以北京为例(单位/年)。
+                                    <br>1.0L(含)以下300元　1.0-1.6L(含)420元
+                                    <br>1.6-2.0L(含)480元　2.0-2.5L(含)900元
+                                    <br>2.5-3.0L(含)1920元　3.0-4.0L(含)3480元
+                                    <br>4.0L以上5280元　不足一年按当年剩余月算。
+                                </td>
+                            </tr>
+                            <tr class="cti-one">
+                                <td>交通事故责任强制保险</td>
+                                <td id="d_loan_z">
+                                    <span class="cti-data-span" data-value="950"><label class="cti-checkbox"></label>家用6座以下</span>
+                                    <span class="cti-data-span" data-value="1100"><label class="cti-checkbox d-checked"></label>家用6座以上</span>
+                                </td>
+                                <td align="center"><input id="d_loan_d" value="1100" disabled="disabled" type="text"></td>
+                                <td>家用6座以下950/年，家用6座及以上1100/年</td>
+                            </tr>
+                        </tbody></table>
+                        <p style="font-size: 14px;">*此结果仅供参考，实际费用以当地缴费为准</p>
+                    </div>
+                <div style="opacity: 1; visibility: visible;" class="pane"><div style="height: 177px; top: 0px;" class="slider"></div></div></div>
+            </div>
+    <!-- 计算器end -->
+    <script src="jquery-1.js"></script>
+    <script src="testdrive.js"></script>
+    <script src="counter_data/jquery.js"></script>
+    <script src="counter_data/counter.js"></script>
+    <!-- <script src="scripts/loan-calculate.js"></script> -->
+    <script type="text/javascript">
+    $(function() {
+        $(".nano").nanoScroller({alwaysVisible: true});
+    });
+    </script>
+
+
+
+</body></html>

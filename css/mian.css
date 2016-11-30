@@ -1,0 +1,40 @@
+/*公众样式*/
+  /*初始化开始*/
+@charset "UTF-8";
+body,div,p,ul,li,ol,dd,dt,dl,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 宋体;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover{
+    color: #E70F2E;
+}
+img,input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: bottom;
+    outline-style: none;
+}
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+.w{
+    width: 1000px;
+    margin: 0  auto;
+}
+/*初始化结束*/
